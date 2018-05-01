@@ -4,7 +4,7 @@ function driversWithRevenueOver(collection, revenue) {
 }
 
 function driverNamesWithRevenueOver(collection, revenue) {
-  let objects = collection.filter(object => object.revenue > revenue)
+  let objects = driversWithRevenueOver(collection, revenue)
   return objects.map(object => object.name )
 }
 
