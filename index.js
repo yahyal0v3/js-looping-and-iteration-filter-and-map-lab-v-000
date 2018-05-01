@@ -15,6 +15,5 @@ function exactMatch(collection, attribute) {
 
 function exactMatchToList(collection, attribute) {
   let matchedObjects = exactMatch(collection, attribute)
-  let key = Object.keys(attribute)
-  return matchedObjects.map(object => object[key])
+  return matchedObjects.map(object => object.name)
 }
